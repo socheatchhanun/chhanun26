@@ -10,11 +10,15 @@ import '../styles/components/footer.css';
 import '../styles/components/mobile-nav.css';
 import '../styles/utils.css';
 import '../styles/components/work.css';
-
 import mobileNav from './utils/mobile-nav';
 import darkMode from './utils/dark-mode';
 import lazyLoading from './utils/lazy-loading';
-
+import '../styles/components/dropdown.css';
+import '../styles/dropdown/advertising.css';
+import '../styles/dropdown/branding.css';
+import '../styles/dropdown/illustrator.css';
+import '../styles/dropdown/manipulation.css';
+import '../styles/dropdown/ui.css';
 mobileNav();
 darkMode();
 lazyLoading();

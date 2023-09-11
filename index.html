@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="">
     <meta name="description" content="My Portfolio website" />
     <meta name="keywords" content="web design, html, css, js" />
     <title>SOCHEAT CHHANUN.</title>
@@ -20,7 +22,16 @@
             <a class="header__link" href="#about">About</a>
           </li>
           <li>
-            <a class="header__link" href="#featured">Artworks</a>
+            
+            <a class="header__link" href="#featured">Artworks<i class="fas fa-caret-down"></i></a>
+              <ul class="dropdown__iteam">
+                  <li><a class="advertising" href="#advertising">Advertising</a></li>
+                  <li><a class="ui" href="#">UX/UI</a></li>
+                  <li><a class="illustrator" href="#">Illustrator</a></li>
+                  <li><a class="manipulation" href="#">Manipulation</a></li> 
+                  <li><a class="branding" href="#">Branding</a></li>
+              </ul>
+  
           </li>
           <li>
             <a class="header__link" href="#motion">Motions</a>
@@ -124,10 +135,28 @@
           <hr class="about__hr" />
           <h3 class="about__subtitle">Softwares</h3>
           <div class="about__ul-container">
+            <ul class="icon__ul1">
+              <img src="icon/photoshop.png">
+            </ul>
+            <ul class="icon__ul2">
+              <img src="icon/illustrator.png">
+            </ul>
+            <ul class="icon__ul3">
+              <img src="icon/after-effects.png">
+            </ul>
             <ul class="about__ul">
               <li class="about__list">Photoshop</li>
               <li class="about__list">illustrator</li>
               <li class="about__list">After Effects</li>
+            </ul>
+            <ul class="icon__ul4">
+              <img src="icon/office.png">
+            </ul>
+            <ul class="icon__ul5">
+              <img src="icon/Procreate-icon.png">
+            </ul>
+            <ul class="icon__ul6">
+              <img src="icon/Procreate-icon.png">
             </ul>
             <ul class="about__ul">
               <li class="about__list">Microsoft Offices</li>
@@ -258,21 +287,56 @@
           </div>
         </div>
       </section>
+      <!-- Hide Dropdow -->
+      <section id="advertising" class="advertising container section">
+        <div class="advertising__wrapper">
+          <h2 class="advertising__title">Advertising Design.</h2>
+        </div>
+        <div class="advertising__img-container">
+          <div class="advertising__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="/1.jpg"
+            />
+          </div>
+          <div class="advertising__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="/2.jpg"
+            />
+          </div>
+          <div class="advertising__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/1920x968"
+              data-src="/3.jpg"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Hide Dropdown -->
       <section id="motion" class="motion container section">
-        <h3 class="featured__subtitle">Videos</h3>
         <div class="featured__wrapper">
           <h2 class="featured__title">All of my Motion Graphics</h2>
         </div>
         <div class="featured__img-container">
             <video width="700" height="400" controls>
-              <source src="/v1.mp4">
+              <source src="/v4.mp4">
             </video>
             <video width="700" height="400" controls>
-              <source src="/v2.mp4">
+              <source src="/v5.mp4">
             </video>
             <video width="700" height="400" controls>
-              <source src="/v2.mp4">
+              <source src="/v3.mp4">
             </video>  
+            <video width="700" height="400" controls>
+              <source src="/v6.mp4">
+            </video> 
+            <video width="700" height="400" controls>
+              <source src="/v7.mp4">
+            </video> 
         </div>    
       </section>
       <section id="contact" class="contact container section">
